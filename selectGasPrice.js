@@ -84,8 +84,8 @@ Template["dapp_selectGasPrice"].helpers({
       // return the fee
       return EthTools.formatBalance(
         calculateGasInWei(template, this.gas, this.gasPrice).toString(10),
-        "0,0.[000000000000000000]",
-        this.unit
+        "0,0.[000000000000000000] UNIT",
+        "ether"
       );
     }
   },
